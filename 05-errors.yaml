@@ -1,0 +1,12 @@
+# Example of imagePullBackOff ERROR
+apiVersion: v1
+kind: Pod
+metadata:
+  name: errors
+  labels:
+    project: roboshop
+    environment: dev
+spec:
+  containers:
+  - name: nginx
+    image: nginabc
