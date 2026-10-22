@@ -1,0 +1,12 @@
+# Example of crashLoopBackOff ERROR
+apiVersion: v1
+kind: Pod
+metadata:
+  name: error
+  labels:
+    project: roboshop
+    environment: dev
+spec:
+  containers:
+  - name: almalinux
+    image: almalinux:9
